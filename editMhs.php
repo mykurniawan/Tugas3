@@ -23,21 +23,6 @@ $data_mahasiswa = mysqli_fetch_array($qry_get_mahasiswa);
         <input type="password" name="password" value="<?= $data_mahasiswa['password'] ?>" class="form-control"> <br>
        
         Jurusan :
-        <!-- <select name="id_jurusan" id="">
-        <?php
-        include "koneksi.php";
-            $qry_jurusan = mysqli_query($conn, "SELECT * FROM t_jurusan");
-            while ($data_jurusan = mysqli_fetch_array($qry_jurusan)) { ?>
-                <option value="<?$data_jurusan['id_jurusan']?>"
-                <?= $data_mahasiswa['id_jurusan'] == $data_jurusan['id_jurusan'] ? 'selected ': null?>
-                > 
-                <?= $data_jurusan['nama_jurusan'] ?>
-            </option>;
-           <?php };
-           
-            ?>
-        </select> -->
-
         <select name="id_jurusan" value="<?= $data_mahasiswa['id_jurusan'] ?>" class="form-select form-control" aria-label=".form-select-sm example">
          <option> Pilih Jurusan</option>
             <?php
