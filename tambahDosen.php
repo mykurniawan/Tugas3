@@ -1,0 +1,27 @@
+<?php 
+include "css.php";
+include "navbar.php";
+?>
+
+<div class="container">
+    <h3 style="text-align: center; padding-top: 20px;">Tambah Dosen</h3>
+    <form action="prosesTambahDsn.php" method="POST">
+        Nama :
+        <input type="text" name="nama_dosen" value="" class="form-control"> <br>
+        ALAMAT :
+        <input type="text" name="alamat" value="" class="form-control"> <br>
+        TELEPON :
+        <input type="text" name="telepon" value="" class="form-control"> <br>
+        <br><br>
+
+        <!-- button  -->
+        <input type="submit" name="simpan" value="Tambah Dosen" class="btn btn-primary">
+        <!-- kembali  -->
+        <a href="dataDosen.php" style="float: right;" class="btn btn-success">Kembali</a>
+        <!-- kembali  -->
+        <!-- button  -->
+    </form> <br><br>
+</div>
+<?php 
+include"footer.php";
+?>
